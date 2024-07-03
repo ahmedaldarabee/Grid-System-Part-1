@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task | CSS </title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            text-transform: capitalize;
+            cursor: pointer;
+        }
+
+        .grid {
+            background-color: #ddd;
+            padding: 20px;
+
+            margin: 150px auto;
+            width: 800px;
+            height: 400px;
+            
+            display: grid;
+            grid-template-rows: repeat(6 , 50px);
+            gap: 10px;
+
+            grid-template-areas: 
+            "eight eight eight"
+            "two two three"
+            "four five five"
+            "six five five"
+            "seven five five"
+            "one one one";
+        }
+
+        .grid div {
+            text-align: center;
+            color: white;
+
+            padding: 10px;
+            background-color: #2196F3;
+            font-weight: bold;
+        }
+        
+        .one {
+            grid-area: one;
+        }
+        
+        .two {
+            grid-area: two;
+        }
+        
+        .three {
+            grid-area: three;
+        }
+        
+        .four {
+            grid-area: four;
+        }
+        
+        .five {
+            grid-area: five;
+        }
+
+        .six {
+            grid-area: six;
+        }
+
+        .seven {
+            grid-area: seven;
+        }
+        
+        .eight {
+            grid-area: eight;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="grid">
+        <div class="one">      1 </div>
+        <div class="two">      2 </div>
+        <div class="three">    3 </div>
+        <div class="four">     4 </div>
+        <div class="five">     5 </div>
+        <div class="six">      6 </div>
+        <div class="seven">    7 </div>
+        <div class="eight">    8 </div>
+    </div>
+
+</body>
+</html>
